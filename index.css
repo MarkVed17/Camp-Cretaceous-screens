@@ -1,0 +1,446 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "PT Sans Narrow", sans-serif;
+  background-color: var(--body-bg-color);
+}
+
+h1 {
+  color: var(--ghost-color);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.home-sub-heading {
+  font-family: Jurassic Park;
+  letter-spacing: 5px;
+  word-spacing: 0.5rem;
+  font-size: 4.5rem;
+  color: var(--font-color);
+  flex-basis: 100%;
+}
+
+.home-screen {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-screen-row {
+  height: 100vh;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-main {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, 0px);
+}
+
+.hero-img {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.9;
+}
+
+.hero-img-subtitle {
+  font-size: 2.2rem;
+  color: #b9b9b9;
+  text-transform: none;
+  font-family: Jurassic Park;
+  letter-spacing: 6px;
+  margin: 0;
+}
+
+.hero-img-subtitle-2 {
+  font-size: 8rem;
+  color: rgb(240, 240, 240);
+  text-transform: none;
+  font-family: Jurassic Park;
+  letter-spacing: 5px;
+  color: #ffff00f3;
+  text-shadow: -5px -5px 0 #156b9c, 5px -5px 0 #156b9c, -5px 5px 0 #156b9c,
+    5px 5px 0 #156b9c;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.header-logo-img {
+  width: auto;
+  height: 80px;
+}
+
+.header-logo-name {
+  color: var(--ghost-color);
+}
+
+.header-nav {
+  margin-top: 1rem;
+  margin: 0;
+  background: none;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+}
+
+.header-nav-links > nav > ul {
+  padding-right: 3rem;
+}
+
+.header-link {
+  color: var(--ghost-color);
+  text-transform: uppercase;
+}
+
+.nav-search {
+  gap: 1rem;
+}
+
+.nav-searchbar {
+  color: var(--ghost-color);
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(255, 255, 255, 0.76);
+  width: 10rem;
+}
+
+.cards-group-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: auto;
+  width: 75%;
+  min-height: 65vh;
+}
+
+.card__primary-action {
+  height: 50vh;
+}
+
+.card__media {
+  height: 30vh;
+  margin: auto;
+  width: 245px;
+  max-width: 75%;
+  padding: 1rem;
+}
+
+.card__secondary-text-over-media {
+  font-size: 0;
+}
+
+.card__title {
+  margin-bottom: 0;
+}
+
+.card__subtitle {
+  color: var(--base-gray-color);
+  margin-top: 0.5rem;
+}
+
+.home-link {
+  display: block;
+  margin: auto;
+  margin-bottom: 5rem;
+  margin: 3rem auto 0 auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #101212;
+}
+
+.home-link > .arrow {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #101212;
+}
+.text-banner {
+  width: 100vw;
+  opacity: 0.8;
+}
+
+.dinosize-chart {
+  background: #55a4b1;
+  background: #101212;
+  background: #ffffff;
+  background: #00919c;
+  background: #ced02d;
+  background: #c6a20b;
+  position: relative;
+}
+
+.dinosize-chart .dinosize {
+  position: absolute;
+  bottom: 15%;
+}
+
+.dinosize-chart .dinosize img {
+  width: 100%;
+}
+
+.dinosize-chart .dinosize-on {
+  position: absolute;
+  /* opacity: 0; */
+  transition: opacity 0.42s;
+}
+
+.dinosize-chart .dinosize.active-dino .dinosize-on {
+  /* opacity: 1; */
+  transition: opacity 0.42s;
+}
+
+.dinosize-chart #map-image {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+.dinosize-chart .ankylosaurus {
+  left: 0;
+  bottom: 15.65%;
+  width: calc(122% / 14.4);
+}
+
+.dinosize-chart .apatosaurus {
+  left: 43%;
+  bottom: 15.1%;
+  z-index: 6;
+  width: calc(507% / 14.4);
+}
+
+.dinosize-chart .baryonyx {
+  left: 71.6%;
+  bottom: 13.4%;
+  z-index: 3;
+  width: calc(336% / 14.4);
+}
+
+.dinosize-chart .dimorphodon {
+  bottom: auto;
+  top: 9.4%;
+  left: 72.1%;
+  width: calc(115% / 14.4);
+}
+
+.dinosize-chart .edmontosaurus {
+  left: 23.85%;
+  bottom: 14%;
+  z-index: 5;
+  width: calc(265% / 14.4);
+}
+
+.dinosize-chart .gallimimus {
+  left: 18.85%;
+  z-index: 4;
+  width: calc(215% / 14.4);
+}
+
+.dinosize-chart .indominus {
+  left: 38.65%;
+  bottom: 12.7%;
+  z-index: 6;
+  width: calc(440% / 14.4);
+}
+
+.dinosize-chart .metriacanthosaurus {
+  left: 0;
+  bottom: 14.1%;
+  z-index: 1;
+  width: calc(255% / 14.4);
+}
+
+.dinosize-chart .microceratus {
+  left: 91.95%;
+  bottom: 14%;
+  width: calc(117% / 14.4);
+}
+
+.dinosize-chart .mosasaur {
+  left: 48.1%;
+  bottom: 0;
+  width: calc(430% / 14.4);
+}
+
+.dinosize-chart .owen-grady {
+  bottom: 5%;
+  left: 43.2%;
+  z-index: 9;
+  width: calc(74% / 14.4);
+}
+
+.dinosize-chart .pachycephalosaurus {
+  left: 79%;
+  bottom: 14%;
+  z-index: 1;
+  width: calc(290% / 14.4);
+}
+
+.dinosize-chart .parasaurolophus {
+  left: 8.6%;
+  bottom: 18.8%;
+  z-index: 2;
+  width: calc(141% / 14.4);
+}
+
+.dinosize-chart .pteranodon {
+  left: 58.4%;
+  top: 7%;
+  bottom: auto;
+  width: calc(238% / 14.4);
+}
+
+.dinosize-chart .raptor {
+  left: 82.35%;
+  bottom: 17%;
+  z-index: 2;
+  width: calc(160% / 14.4);
+}
+
+.dinosize-chart .stegosaurus {
+  left: 12.75%;
+  bottom: 15.5%;
+  z-index: 3;
+  width: calc(273% / 14.4);
+}
+
+.dinosize-chart .suchomimus {
+  left: 63%;
+  bottom: 14.4%;
+  z-index: 5;
+  width: calc(233% / 14.4);
+}
+
+.dinosize-chart .tyrannosaurus-rex {
+  left: 31%;
+  bottom: 14.3%;
+  z-index: 8;
+  width: calc(240% / 14.4);
+}
+
+.dinosize-chart .triceratops {
+  left: 68.4%;
+  bottom: 14.7%;
+  z-index: 4;
+  width: calc(243% / 14.4);
+}
+
+a,
+a:hover,
+img,
+img:hover {
+  transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+
+/* @media screen and (max-width: 768px) {
+  .dinosize-chart {
+    display: none;
+  }
+} */
+
+.home-page-quote {
+  color: var(--font-color);
+  color: #f3f3f3;
+  background-color: #c6a20b;
+  width: 80vw;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.quote-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-page-quote {
+  color: var(--font-color);
+  color: #f3f3f3;
+  background-color: #c6a20b;
+  font-size: 3rem;
+  font-weight: 900;
+  margin: auto;
+}
+
+.quote-border {
+  border: 0;
+  margin: 0;
+  padding: 2rem;
+}
+
+.quote-writer {
+  padding: 0 1.5rem 1.5rem 0;
+}
+
+.movie-list-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.movie-logo {
+  width: 30%;
+  height: 35%;
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-img {
+    display: block;
+    width: 100%;
+    height: 25vh;
+    height: 60vh;
+  }
+
+  .dinosize-chart #map-image {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 25vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .home-page-quote {
+    color: #f3f3f3;
+    background-color: #c6a20b;
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
+  .quote-border {
+    padding: 1rem;
+  }
+
+  .quote-writer {
+    color: var(--font-color);
+    padding: 0 1.5rem 0 0;
+  }
+}
+
+@media screen and (max-width: 1168px) {
+  .home-screen {
+    gap: 5rem;
+  }
+  .home-screen-row {
+    height: max-content;
+  }
+}
