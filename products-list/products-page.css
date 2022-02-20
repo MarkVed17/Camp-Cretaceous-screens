@@ -1,0 +1,137 @@
+.header-logo-img {
+  width: auto;
+  height: 5rem;
+}
+
+.main-container {
+  display: flex;
+}
+
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  gap: 1.5rem;
+  min-width: 15rem;
+  width: 30%;
+  padding: 0 2rem 2rem 2rem;
+  box-shadow: 10px 11px 14px -8px rgba(0, 0, 0, 0.5);
+}
+
+.filter-clear-box {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+  height: fit-content;
+  margin-top: 5rem;
+}
+
+.filter-container > div > h2 {
+  height: fit-content;
+  margin: 0;
+}
+
+.filter-container > div > button {
+  height: fit-content;
+  padding: 2px;
+  font-size: 0.875rem;
+  color: var(--accent-color);
+}
+
+.category-list {
+  font-family: "PT Sans Narrow", sans-serif;
+  background: var(--body-bg-color);
+  width: 80%;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  font-size: 1rem;
+  color: var(--font-color);
+  border: 1px solid #242424;
+}
+
+.filter-radio-label {
+  color: var(--base-gray-color);
+}
+
+.heading-products-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading-products-container > h1 {
+  padding: 1rem 5rem;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 0rem;
+  width: 90%;
+  margin: auto;
+}
+
+.card {
+  position: relative;
+}
+
+.card-fav-icon {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  padding: 1rem 0 0 1rem;
+}
+
+.card-fav-icon > .material-icons {
+  color: var(--base-gray-color);
+}
+
+.card-fav-icon:hover {
+  cursor: pointer;
+}
+
+.card__primary-action {
+  height: 50vh;
+  height: 55vh;
+}
+
+.card__media {
+  height: 30vh;
+  margin: auto;
+  width: 15rem;
+  width: 17rem;
+  max-width: 75%;
+  padding: 1rem;
+}
+
+/* .card__primary-text-over-media {
+    position: absolute;
+    top: 18rem;
+    color: var(--ghost-color);
+  } */
+
+.card__secondary-text-over-media {
+  font-size: 0;
+}
+
+.card__title {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.card__subtitle {
+  color: var(--base-gray-color);
+  margin-top: 0.5rem;
+}
+
+.card__action-buttons > .btn {
+  width: 40%;
+}
+
+.buy-btn {
+  color: var(--body-bg-color);
+  font-weight: 600;
+}
+
+.cart-btn {
+  background-color: transparent;
+}
