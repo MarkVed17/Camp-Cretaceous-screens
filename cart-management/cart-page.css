@@ -1,0 +1,142 @@
+.header-logo-img {
+  width: auto;
+  height: 5rem;
+}
+
+.cart-management-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 70%;
+  gap: 1rem;
+}
+
+.cart-heading {
+  flex-basis: 100%;
+}
+
+.cart-item {
+  display: flex;
+  /* width: 80%; */
+  gap: 2rem;
+  padding: 0 2rem;
+  background-color: var(--card-bg-color);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+}
+
+.cart-img {
+  height: 30vh;
+  flex-basis: 30%;
+}
+
+.cart-primary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-basis: 50%;
+  gap: 1rem;
+}
+
+.cart-product-description {
+  color: var(--base-gray-color);
+  text-align: left;
+}
+
+.cart-btn {
+  color: var(--body-bg-color);
+  font-weight: 600;
+}
+
+.cart-primary-action {
+  display: flex;
+  gap: 1rem;
+}
+
+.remove-cart-btn {
+  background-color: transparent;
+}
+
+.cart-secondary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5.9rem;
+  flex-basis: 20%;
+}
+
+.cart-secondary > h3 {
+  padding-top: 7px;
+  margin-bottom: 0;
+}
+
+.quantity-list {
+  font-family: "PT Sans Narrow", sans-serif;
+  background: var(--card-bg-color);
+  /* width: 80%; */
+  padding: 0.5rem 1.2rem 0.5rem 0.5rem;
+  font-size: 1rem;
+  color: var(--font-color);
+  border: 1px solid #464646;
+}
+
+select option {
+  background-color: var(--body-bg-color);
+}
+
+.cart-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 25%;
+  gap: 1rem;
+  background-color: var(--card-bg-color);
+  height: fit-content;
+  padding: 1.5rem 0;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+}
+
+.cart-summary > h1 {
+  margin: 0;
+  /* padding: 1rem; */
+  /* padding-top: 1rem; */
+}
+
+.cart-summary > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+  width: 80%;
+}
+
+.cart-summary > div > h3,
+h4 {
+  margin: 0;
+}
+
+.cart-summary > hr {
+  width: 90%;
+  margin: 0;
+  border: none;
+  height: 1px;
+  color: #333; /* old IE */
+  background-color: #333; /* Modern Browsers */
+}
+
+.cart-total > h2 {
+  margin: 0;
+  color: var(--accent-color);
+}
+
+.checkout-btn {
+  color: var(--body-bg-color);
+  font-weight: 600;
+}
