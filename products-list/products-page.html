@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://raptor-ui.netlify.app/main.css">
+  <link rel="stylesheet" href="products-page.css" />
+  <link rel="stylesheet" href="/common.css">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+  <title>Products | Camp Cretaceous</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="header-nav nav-search">
+    <a href="/index.html" class="header-logo-link">
+      <img class="header-logo-img" src="/assets/movies-logo/Camp_Cretaceous_Logo.svg" alt="jurassic-park-logo" />
+    </a>
+
+    <div class="std-search">
+      <input type="text" placeholder="Search..." class="input standard nav-searchbar" />
+      <button class="btn btn-brand btn-accent search-btn nav-searchbar-btn">
+        <span class="material-icons nav-search-icon"> search </span>
+      </button>
+    </div>
+
+    <div class="header-nav-links">
+      <nav>
+        <ul>
+          <li><a href="" class="header-link">Wishlist</a></li>
+          <li><a href="" class="header-link">Cart</a></li>
+          <li><a href="" class="header-link">Account</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+
+  <div class="main-container">
+    <!-- Filter Component -->
+    <div class="filter-container">
+
+      <!-- Filter Heading -->
+      <div class="filter-clear-box">
+        <h2>Filters</h2>
+        <button class="btn btn-brand clear-btn">Clear All</button>
+      </div>
+
+      <div class="filter">
+        <h3 class="filter-label">
+          Category
+        </h3>
+        <select name="category_list" id="categorylist" class="category-list">
+          <option value="any">Any</option>
+          <option value="Category">Category</option>
+          <option value="Category">Category</option>
+          <option value="Category">Category</option>
+          <option value="Category">Category</option>
+        </select>
+        <h3 class="filter-label">Max-Price</h3>
+        <input type="range" name="max_price-slider" id="maxprice-slider" class="filter-slider" data-price-input='{
+              "0": "500",
+              "1": "1000",
+              "2": "1,500",
+              "3": "2,000",
+              "4": "2,500",
+              "5": "3,500",
+              "6": "5,000",
+              "7": "7,500",
+              "8": "10,000",
+              "9": "15,000+"                        
+            }'>
+        <h3 class="filter-label">Rating</h3>
+        <div class="rating__container">
+          <input type="radio" id="4star_above" name="ratingfilter" value="4starabove" class="filter-radio" />
+          <label for="4star_above" class="filter-radio-label">4 star & above </label><br />
+        </div>
+        <div class="rating__container">
+          <input type="radio" id="3star_above" name="ratingfilter" value="3starabove" class="filter-radio" />
+          <label for="3star_above" class="filter-radio-label">3 star & above</label><br />
+        </div>
+        <div class="rating__container">
+          <input type="radio" id="2star_above" name="ratingfilter" value="2starabove" class="filter-radio" />
+          <label for="2star_above" class="filter-radio-label">2 star & above</label>
+        </div>
+        <div class="rating__container">
+          <input type="radio" id="1star_above" name="ratingfilter" value="1starabove" class="filter-radio" />
+          <label for="1star_above" class="filter-radio-label">1 star & above</label>
+        </div>
+        <h3 class="secondary_font text-align--center filter-label">Sort By</h3>
+        <div class="sort__container">
+          <input type="radio" id="price_lowtohigh" name="sortfilter" value="pricelowtohigh" class="filter-radio" />
+          <label for="price_lowtohigh" class="filter-radio-label">Price: Low to High</label><br />
+        </div>
+        <div class="sort__container">
+          <input type="radio" id="price_hightolow" name="sortfilter" value="pricehightolow" class="filter-radio" />
+          <label for="price_hightolow" class="filter-radio-label">Price: High to Low</label><br />
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="heading-products-container">
+      <h1>All Products</h1>
+
+      <!-- All Product Cards -->
+      <div class="products-container">
+
+        <!-- Basic Card - 1-->
+        <div class="card">
+          <div class="card__primary-action">
+            <img class="card__media" src="/assets/products/barbasol.png"></img>
+            <!-- Fav icon -->
+            <button class="card-fav-icon">
+              <span class="material-icons">favorite_outline</span>
+            </button>
+            <div class="card__primary">
+              <h2 class="card__title">
+                Barbasol Can
+              </h2>
+              <h3 class="card__subtitle">
+                <span class="rupee-symbol">₹ 1000</span>
+              </h3>
+            </div>
+            <div class="card__actions">
+              <div class="card__action-buttons">
+                <button class="btn btn-brand btn-accent buy-btn">
+                  Buy Now
+                </button>
+                <button class="btn btn-outline btn-accent cart-btn">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card - 1 end -->
+
+        <!-- Basic Card - 2-->
+        <div class="card">
+          <div class="card__primary-action">
+            <img class="card__media" src="/assets/products/jurassic-musquito.png"></img>
+            <!-- Fav icon -->
+            <button class="card-fav-icon">
+              <span class="material-icons">favorite_outline</span>
+            </button>
+            <div class="card__primary">
+              <h2 class="card__title">
+                Barbasol Can
+              </h2>
+              <h3 class="card__subtitle">
+                <span class="rupee-symbol">₹ 1000</span>
+            </div>
+            <div class="card__actions">
+              <div class="card__action-buttons">
+                <button class="btn btn-brand btn-accent buy-btn">
+                  Buy Now
+                </button>
+                <button class="btn btn-outline btn-accent cart-btn">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card - 2 end -->
+
+        <!-- Basic Card - 3-->
+        <div class="card">
+          <div class="card__primary-action">
+            <img class="card__media" src="/assets/products/raptor-resonating-chamber.png"></img>
+            <!-- Fav icon -->
+            <button class="card-fav-icon">
+              <span class="material-icons">favorite_outline</span>
+            </button>
+            <div class="card__primary">
+              <h2 class="card__title">
+                Barbasol Can
+              </h2>
+              <h3 class="card__subtitle">
+                <span class="rupee-symbol">₹ 1000</span>
+              </h3>
+            </div>
+            <div class="card__actions">
+              <div class="card__action-buttons">
+                <button class="btn btn-brand btn-accent buy-btn">
+                  Buy Now
+                </button>
+                <button class="btn btn-outline btn-accent cart-btn">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card  3 end -->
+
+        <!-- Basic Card - 1-->
+        <div class="card">
+          <div class="card__primary-action">
+            <img class="card__media" src="/assets/products/barbasol.png"></img>
+            <!-- Fav icon -->
+            <button class="card-fav-icon">
+              <span class="material-icons">favorite_outline</span>
+            </button>
+            <div class="card__primary">
+              <h2 class="card__title">
+                Barbasol Can
+              </h2>
+              <h3 class="card__subtitle">
+                <span class="rupee-symbol">₹ 1000</span>
+              </h3>
+            </div>
+            <div class="card__actions">
+              <div class="card__action-buttons">
+                <button class="btn btn-brand btn-accent buy-btn">
+                  Buy Now
+                </button>
+                <button class="btn btn-outline btn-accent cart-btn">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card - 1 end -->
+
+        <!-- Basic Card - 2-->
+        <div class="card">
+          <div class="card__primary-action">
+            <img class="card__media" src="/assets/products/jurassic-musquito.png"></img>
+            <!-- Fav icon -->
+            <button class="card-fav-icon">
+              <span class="material-icons">favorite_outline</span>
+            </button>
+            <div class="card__primary">
+              <h2 class="card__title">
+                Barbasol Can
+              </h2>
+              <h3 class="card__subtitle">
+                <span class="rupee-symbol">₹ 1000</span>
+              </h3>
+            </div>
+            <div class="card__actions">
+              <div class="card__action-buttons">
+                <button class="btn btn-brand btn-accent buy-btn">
+                  Buy Now
+                </button>
+                <button class="btn btn-outline btn-accent cart-btn">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card - 2 end -->
+
+        <!-- Basic Card - 3-->
+        <div class="card">
+          <div class="card__primary-action">
+            <img class="card__media" src="/assets/products/raptor-resonating-chamber.png"></img>
+            <!-- Fav icon -->
+            <button class="card-fav-icon">
+              <span class="material-icons">favorite_outline</span>
+            </button>
+            <div class="card__primary">
+              <h2 class="card__title">
+                Barbasol Can
+              </h2>
+              <h3 class="card__subtitle">
+                <span class="rupee-symbol">₹ 1000</span>
+              </h3>
+            </div>
+            <div class="card__actions">
+              <div class="card__action-buttons">
+                <button class="btn btn-brand btn-accent buy-btn">
+                  Buy Now
+                </button>
+                <button class="btn btn-outline btn-accent cart-btn">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card  3 end -->
+
+        <!-- Basic Card - 1-->
+        <div class="card">
+          <div class="card__primary-action">
+            <img class="card__media" src="/assets/products/barbasol.png"></img>
+            <!-- Fav icon -->
+            <button class="card-fav-icon">
+              <span class="material-icons">favorite_outline</span>
+            </button>
+            <div class="card__primary">
+              <h2 class="card__title">
+                Barbasol Can
+              </h2>
+              <h3 class="card__subtitle">
+                <span class="rupee-symbol">₹ 1000</span>
+              </h3>
+            </div>
+            <div class="card__actions">
+              <div class="card__action-buttons">
+                <button class="btn btn-brand btn-accent buy-btn">
+                  Buy Now
+                </button>
+                <button class="btn btn-outline btn-accent cart-btn">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card - 1 end -->
+
+        <!-- Basic Card - 2-->
+        <div class="card">
+          <div class="card__primary-action">
+            <img class="card__media" src="/assets/products/jurassic-musquito.png"></img>
+            <!-- Fav icon -->
+            <button class="card-fav-icon">
+              <span class="material-icons">favorite_outline</span>
+            </button>
+            <div class="card__primary">
+              <h2 class="card__title">
+                Barbasol Can
+              </h2>
+              <h3 class="card__subtitle">
+                <span class="rupee-symbol">₹ 1000</span>
+              </h3>
+            </div>
+            <div class="card__actions">
+              <div class="card__action-buttons">
+                <button class="btn btn-brand btn-accent buy-btn">
+                  Buy Now
+                </button>
+                <button class="btn btn-outline btn-accent cart-btn">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card - 2 end -->
+
+        <!-- Basic Card - 3-->
+        <div class="card">
+          <div class="card__primary-action">
+            <img class="card__media" src="/assets/products/raptor-resonating-chamber.png"></img>
+            <!-- Fav icon -->
+            <button class="card-fav-icon">
+              <span class="material-icons">favorite_outline</span>
+            </button>
+            <div class="card__primary">
+              <h2 class="card__title">
+                Barbasol Can
+              </h2>
+              <h3 class="card__subtitle">
+                <span class="rupee-symbol">₹ 1000</span>
+              </h3>
+            </div>
+            <div class="card__actions">
+              <div class="card__action-buttons">
+                <button class="btn btn-brand btn-accent buy-btn">
+                  Buy Now
+                </button>
+                <button class="btn btn-outline btn-accent cart-btn">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card  3 end -->
+
+
+      </div>
+      <!-- Products-List-End -->
+    </div>
+    <!-- Heading + Products List End -->
+
+    <!-- Main Container Ends -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer-container">
+    <!-- Logo + Copyright -->
+    <div class="footer-brand">
+      <img class="footer-logo-img" src="/assets/movies-logo/Home_Camp_Cretaceous_Logo.svg" alt="jurassic-park-logo" />
+    </div>
+
+    <!-- Links -->
+    <div class="footer-links">
+      <h1 class="footer-heading">Company</h1>
+      <a href="">About Us</a>
+      <a href="">Terms & Conditions</a>
+      <a href="">Privacy Policy</a>
+    </div>
+
+    <!-- Social Media Presence -->
+    <div class="footer-social-media">
+      <h1 class="footer-heading">Connect with us</h1>
+      <span class="footer-icons">
+        <i class="fa-brands fa-instagram footer-icon"></i>
+        <i class="fa-brands fa-twitter footer-icon"></i>
+        <i class="fa-brands fa-facebook-f footer-icon"></i>
+      </span>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="footer-subscribe">
+      <h1 class="footer-heading">Subscribe</h1>
+      <div class="std-search">
+        <input type="text" placeholder="Enter Email Id" class="input standard subscribe" />
+        <button class="btn btn-brand btn-accent subscribe-btn">Subscribe</button>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-copyright">
+      <span>Copyright © 2022</span>
+      <span>All rights reserved</span>
+    </div>
+
+  </footer>
+
+
+</body>
+
+</html>
